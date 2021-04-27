@@ -4,7 +4,26 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+    
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and linked to EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided.
+- To test the page, just open it with your default browser.
+- Use Bootstrap4.6 classes to render the page.
+- Use containers, rows and cols in order to achieve a great responsive layout.
 
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you'd have a short biography section of yourself, and the top albums of your life, 
+the worst album you ever listened to and everything related to the music you love.
+
+NOTE:
+Most of the times, even the most expert of designers need inspiration.
+Spend 30 minutes surfing the web and searching the best way of rapresenting the album you love the most.
+Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
+-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <style>
       /* EXERCISE 1
             For all Albums we'd like to have a consistent style.
@@ -17,22 +36,186 @@
             - The album duration
             - etc
          */
+         .container{
+
+         }
+         .cover{
+
+         }
+         .title{
+
+         }
+         .artist{
+
+         }
+         .year{
+
+         }
+
     </style>
   </head>
   <body>
-    <!-- EXERCISE 2 
-            Implement a navigation bar using the bootstrap component
-            This navigation bar must link every section in your page
-        -->
 
-    <!-- EXERCISE 3
-            Create a responsive section for your favourite albums.
-            In this section you should have:
-            - 4 albums per row when the screen is very large
-            - 3 albums per row when you are on a tablet (or a smaller viewport)
-            - 2 albums per row when you are on a small screen
-        -->
 
+    <div class="container">
+       
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="container">        
+    <div class="jumbotron">
+            <h1 class="display-4">Welcome to my Biomiusicblog</h1>
+            <p class="lead"></p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+          </div>
+          <div class="row " id="albums">
+           
+            <!-- 
+                col-6 => use 6 columns, per row 2 elements (12 / 6)
+                col-md-3 => use 3 columns, per row 4 elements (12 / 3)
+                col-lg-2 => use 2 columns, per row 6 elements (12 / 2)
+             -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="/img/boney.jfif" alt="album cover" class="img-fluid cover" />
+                <p class="title">Daddy Cool</p>
+                <p class="artist">Boney M.</p>
+                <p class="year">1976</p>
+                <!-- <span class="badge badge-success">Price 9€</span> -->
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="/img/benassi.jfif" alt="album cover" class="img-fluid cover" />
+                <p class="title">Satisfaction</p>
+                <p class="artist">Benny Benassi</p>
+                <p class="year">2003</p>
+                <!-- <span class="badge badge-success">Price 9€</span> -->
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="/img/lollipop.jfif" alt="album cover" class="img-fluid cover" />
+                <p class="title">Lollipop</p>
+                <p class="artist">Sandy Rivera</p>
+                <p class="year">2007</p>
+                <!-- <span class="badge badge-success">Price 9€</span> -->
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="/img/shaggy.jfif" alt="album cover" class="img-fluid cover" />
+                <p class="title">It wasn't me</p>
+                <p class="artist">Shaggy</p>
+                <p class="year"> 2002</p>
+                <!-- <span class="badge badge-success">Price 9€</span> -->
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="/img/lemme.jfif" alt="album cover" class="img-fluid cover" />
+                <p class="title"> Let Me Think About It</p>
+                <p class="artist">Ida Corr vs Fedde Le Grand</p>
+                <p class="year">2006</p>
+                <!-- <span class="badge badge-success">Price 9€</span> -->
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="/img/stress.jfif" alt="album cover" class="img-fluid cover" />
+                <p class="title">No stress</p>
+                <p class="artist">Laurent Wolf</p>
+                <p class="year">2008 </p>
+                <!-- <span class="badge badge-success">Price 9€</span> -->
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="/img/weekend.jfif" alt="album cover" class="img-fluid cover" />
+                <p class="title">The weekend</p>
+                <p class="artist">Michael Gray</p>
+                <p class="year">2005</p>
+                <!-- <span class="badge badge-success">Price 9€</span> -->
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="/img/timbaland.jfif" alt="album cover" class="img-fluid cover" />
+                <p class="title">- The Way I Are </p>
+                <p class="artist">Timbaland ft. Keri Hilson </p>
+                <p class="year">2007</p>
+                <!-- <span class="badge badge-success">Price 9€</span> -->
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="/img/gaudino.jfif" alt="album cover" class="img-fluid cover" />
+                <p class="title">Destination Calabria
+                </p>
+                <p class="artist">Alex Gaudino</p>
+                <p class="year">2003</p>
+                <!-- <span class="badge badge-success">Price 9€</span> -->
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="/img/puy.jfif" alt="album cover" class="img-fluid cover" />
+                <p class="title">Put 'Em High</p>
+                <p class="artist">StoneBridge ft Therese</p>
+                <p class="year">2004</p>
+                <!-- <span class="badge badge-success">Price 9€</span> -->
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="/img/nelly.jfif" alt="album cover" class="img-fluid cover" />
+                <p class="title">I'm like a bird</p>
+                <p class="artist">Nelly Furtado </p>
+                <p class="year">Godhelp</p>
+                <!-- <span class="badge badge-success">Price 9€</span> -->
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <img src="/img/king.jfif" alt="album cover" class="img-fluid cover" />
+                <p class="title">King of my castle</p>
+                <p class="artist">Wamdue Project</p>
+                <p class="year">1998</p>
+                <!-- <span class="badge badge-success">Price 9€</span> -->
+            </div>
+            
+            
+        </div>
+
+    </div>
+
+   <div class="d-flex p-2 bd-highlight  bg-primary">
+    <span class="d-block p-2 bg-primary text-white">Reviews...</span>
+    <div class="col-6 col-md-4 col-lg-3">
+        <img src="/img/whoa.jpg" alt="album cover" class="img-fluid cover" />
+        <p class="title"> Whoa, Nelly!</p>
+        <p class="artist">Nelly Furtado</p>
+        <p class="year">20006</p>
+            </div>
+    <div class="col-6 col-md-4 col-lg-3 ">
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Leave a review</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button>SUBMIT</button>
+          </div>
+    </div>
+   </div>
     <!-- EXERCISE 4
             Create a section for the album reviews.
             Pick one of your fav albums, and create a section with:
@@ -68,7 +251,7 @@
 
     <!-- EXTRA:
             EXERCISE 9
-            Create an album details area that is going to be toggled on and off by clicking on the album image
+um details area that is going to be toggled on and off by clicking on the album image            Create an alb
         -->
 
     <!-- EXERCISE 10
